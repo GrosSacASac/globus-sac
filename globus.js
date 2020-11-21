@@ -2,7 +2,7 @@ export {
     getDistance,
     radiansFromDegree,
 };
-import {radiusEarthM} from "./settings/defaultSettings.js"
+import {radiusEarthM} from "./settings/defaultSettings.js";
 
 
 const radiansFromDegree = degree => {
@@ -24,6 +24,6 @@ const getDistance = function (latitudeA, longitudeA, latitudeB, longitudeB) {
         Math.sin((latitudeARad - latitudeBRad) / 2) ** 2 +
         Math.sin((longitudeARad - longitudeBRad) / 2) ** 2 * Math.cos(latitudeARad) * Math.cos(latitudeBRad);
     const c = 2 * Math.atan2(a ** 0.5, (1 - a) ** 0.5);
-    const distance = radiusEarthM * c // m
+    const distance = radiusEarthM * c; // m
     return distance; 
 };
