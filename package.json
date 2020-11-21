@@ -1,0 +1,47 @@
+{
+  "name": "globus-sac",
+  "version": "1.0.0",
+  "description": "",
+  "license": "CC0-1.0",
+  "type": "module",
+  "main": "globus.js",
+  "scripts": {
+    "test": "todo",
+    "lint-fix": "eslint --ignore-path .gitignore --fix .",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "eslint": "7.x",
+    "eslint-config-red": "1.x"
+  },
+  "eslintConfig": {
+    "extends": [
+      "red"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2021,
+      "sourceType": "module",
+      "ecmaFeatures": {}
+    },
+    "env": {
+      "es2021": true
+    }
+  },
+  "files": [
+    "globus.js",
+    "settings",
+    "readme.md",
+    "license.txt",
+    "changelog.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/GrosSacASac/globus-sac.git"
+  },
+  "keywords": [
+    "globe",
+    "geography",
+    "distance",
+    "harvesine"
+  ]
+}
